@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="183px" height="50px" viewBox="0 0 183 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#FF9C3F" offset="0%"></stop>
+            <stop stop-color="#FF5757" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <g id="logo">
+                <circle id="Oval" fill="url(#linearGradient-1)" cx="25" cy="25" r="25"></circle>
+                <path d="M19,30.6369357 C19,31.445626 18.382,32.3215853 17.593,32.6008979 L11.407,34.8032263 C10.63,35.0796142 10,34.6379786 10,33.8380625 L10,19.2377656 C10,18.4290753 10.618,17.5545783 11.407,17.2752658 L17.5945,15.0817116 C18.37,14.8067861 19,15.249884 19,16.0468754 L19,30.6369357 Z M20.5,30.6369357 C20.5,31.445626 21.118,32.3215853 21.907,32.6008979 L28.093,34.8032263 C28.87,35.0796142 29.5,34.6379786 29.5,33.8380625 L29.5,19.2377656 C29.5,18.4290753 28.882,17.5545783 28.093,17.2752658 L21.9055,15.0817116 C21.13,14.8067861 20.5,15.249884 20.5,16.0468754 L20.5,30.6369357 Z M40,31.0025281 C40,31.8112184 39.352,32.6784035 38.575,32.9313934 L32.425,34.9289901 C31.639,35.1849048 31,34.7257207 31,33.927267 L31,19.3094217 C31,18.5007314 31.648,17.6335463 32.425,17.3805564 L38.575,15.3829597 C39.361,15.127045 40,15.586229 40,16.3846828 L40,31.0025281 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+            <text id="EmberMap" font-family="AvenirNext-Medium, Avenir Next" font-size="23" font-weight="400" fill="#333232">
+                <tspan x="65.413" y="32">EmberMap</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

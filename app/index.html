@@ -7,6 +7,26 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <script type="text/javascript" async="" src="./js/analytics.js"></script>
+    <!--<script async="" src="./images/js"></script>-->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-28329394-6');
+    </script>
+
+    <link href="./js/site.css" rel="stylesheet">
+    <link href="./js/css" rel="stylesheet">
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/modernizr-custom.js"></script>
+    <script src="./js/site.js"></script>
+
+
     {{content-for "head"}}
 
     <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css">
