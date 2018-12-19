@@ -1,0 +1,21 @@
+  <div class="logo-and-date">
+    {{#link-to "index" class="logo active"}}<img alt="EmberConf 2019" src="./images/emberconf-2019-logo.svg">{{/link-to}}
+    <h3 class="date">{{#link-to "index" class="active"}}March 18–20<br>Portland, OR{{/link-to}}</h3></div>
+  <button class="menu-trigger" data-text-swap="Close" href="#">Menu</button>
+  <ul>
+    <li>{{#link-to "schedule"}}Schedule{{/link-to}}</li>
+    <li>{{#link-to "speakers"}}Speakers{{/link-to}}</li>
+    <li class="drawer">{{#link-to "about" class="drawer-opener"}}About{{/link-to}}
+      <ul>
+        <li>{{#link-to "about"}}About EmberConf{{/link-to}}</li>
+        <li>{{#link-to "mentorship-program"}}Mentorship Program{{/link-to}}</li>
+        <li>{{#link-to "inclusiveness-at-emberconf"}}Inclusiveness at EmberConf{{/link-to}}</li>
+        <li>{{#link-to "faqs"}}FAQs{{/link-to}}</li>
+      </ul>
+    </li>
+    <li>{{#link-to "location-and-hotels"}}Location &amp; Hotels{{/link-to}}</li>
+    <li>{{#link-to "sponsors"}}Sponsors{{/link-to}}</li>
+    {{#if showRegisterButton}}
+      <li>{{#link-to "register" class="button"}}Register{{/link-to}}</li>
+    {{/if}}
+  </ul>

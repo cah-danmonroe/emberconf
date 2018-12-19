@@ -1,0 +1,10 @@
+<a class="toggle-link event-name" {{action "toggleOpen"}}>
+  <p>{{session.name}}</p>
+</a>
+<div class="session-description switchable-content">
+  [{{session.anchor}}]]
+  {{#link-to "schedule" class="session-time"}}{{session.time}}{{/link-to}}
+  <div class="event-description">
+    {{session.description}}
+  </div>
+</div>
