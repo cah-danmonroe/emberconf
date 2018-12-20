@@ -41,12 +41,389 @@
 
   </svg>
 
+  <section class=body>
+    <div class=container>
+      <ul class=page-tabs>
+        <li id=2019-sponsors class="{{if showBecomeSponsor "" "active"}}"><a onclick={{action "tabClick" "sponsors"}}>2019 Sponsors</a></li>
+        <li id=become-a-sponsor class="{{if showBecomeSponsor "active"}}"><a onclick={{action "tabClick" "newsponsor"}}>Become a Sponsor</a></li>
+      </ul>
+    </div>
+    <!--<script src="/javascripts/page-tabs.js"></script>-->
+    <div class=content-wrapper>
+
+      {{#if showBecomeSponsor}}
+        <div class="introduction">
+          <div class="container">
+            <p>Promote your product to more than 1,000 attendees, including Ember's top developers, while showing support for the Ember community.</p>
+            <p class="cta"><a href="mailto:sponsorships@emberconf.com" class="button stroked">Email us about sponsorship packages</a></p>
+            <p class="secondary-cta">or <a href="https://tilde.wufoo.com/forms/emberconf-2019-a-la-carte-sponsorships/" target="_blank">shop a la carte sponsorships</a></p>
+          </div>
+        </div>
+        <div id="packages">
+          <div class="container">
+            <table>
+              <thead id="table-header">
+              <tr>
+                <th class="comparison-header">Sponsorship packages:</th>
+                <th class="package bronze">Bronze</th>
+                <th class="package silver">Silver</th>
+                <th class="package gold">Gold</th>
+                <th class="package diamond">Diamond</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr class="benefits">
+                <th class="benefit">
+                  <p>Logo in website footer</p>
+                </th>
+                <td class="yes"><span title="Yes"></span></td>
+                <td class="yes"><span title="Yes"></span></td>
+                <td class="yes"><span title="Yes"></span></td>
+                <td class="yes"><span title="Yes"></span></td>
+              </tr>
+              <tr class="benefits">
+                <th class="benefit">
+                  <p>Logo and description on sponsor webpage</p>
+                </th>
+                <td class="yes"><span title="Yes"></span></td>
+                <td class="yes"><span title="Yes"></span></td>
+                <td class="yes"><span title="Yes"></span></td>
+                <td class="yes"><span title="Yes"></span></td>
+              </tr>
+              <tr class="benefits">
+                <th class="benefit">
+                  <p>Logo on sponsor signage</p>
+                </th>
+                <td class="yes"><span title="Yes"></span></td>
+                <td class="yes"><span title="Yes"></span></td>
+                <td class="yes"><span title="Yes"></span></td>
+                <td class="yes"><span title="Yes"></span></td>
+              </tr>
+              <tr class="benefits">
+                <th class="benefit">
+                  <p>Opportunity to distribute handouts and/or swag<span class="asterisk" style="--materials-due-date: 'March 4, 2019'">*</span></p>
+                </th>
+                <td class="no"><span title="No"></span></td>
+                <td class="yes"><span title="Yes"></span></td>
+                <td class="yes"><span title="Yes"></span></td>
+                <td class="yes"><span title="Yes"></span></td>
+              </tr>
+              <tr class="benefits">
+                <th class="benefit">
+                  <p>Recognition in welcome and announcements</p>
+                </th>
+                <td class="no"><span title="No"></span></td>
+                <td class="yes"><span title="Yes"></span></td>
+                <td class="yes"><span title="Yes"></span></td>
+                <td class="yes"><span title="Yes"></span></td>
+              </tr>
+              <tr class="benefits">
+                <th class="benefit">
+                  <p>Sponsor designation in emails and other marketing</p>
+                </th>
+                <td class="no"><span title="No"></span></td>
+                <td class="yes"><span title="Yes"></span></td>
+                <td class="yes"><span title="Yes"></span></td>
+                <td class="yes"><span title="Yes"></span></td>
+              </tr>
+              <tr class="benefits">
+                <th class="benefit">
+                  <p>Sponsor table in exhibit hall</p>
+                  <div><span class="limited-quantities">Limited quantities</span></div>
+                  <p></p>
+                </th>
+                <td class="no"><span title="No"></span></td>
+                <td class="no"><span title="No"></span></td>
+                <td class="yes"><span title="Yes"></span></td>
+                <td class="yes"><span title="Yes"></span></td>
+              </tr>
+              <tr class="benefits">
+                <th class="benefit">
+                  <p>Opportunity to sponsor bags and/or lanyards<span class="asterisk" style="--materials-due-date: 'March 4, 2019'">*</span></p>
+                  <div><span class="paid-addon">Paid addon</span><span class="limited-quantities">Limited quantities</span></div>
+                  <p></p>
+                </th>
+                <td class="no"><span title="No"></span></td>
+                <td class="no"><span title="No"></span></td>
+                <td class="yes"><span title="Yes"></span></td>
+                <td class="yes"><span title="Yes"></span></td>
+              </tr>
+              <tr class="benefits">
+                <th class="benefit">
+                  <p>Opportunity to host or headline after-hours events</p>
+                  <div><span class="paid-addon">Paid addon</span><span class="limited-quantities">Limited quantities</span></div>
+                  <p></p>
+                </th>
+                <td class="no"><span title="No"></span></td>
+                <td class="no"><span title="No"></span></td>
+                <td class="yes"><span title="Yes"></span></td>
+                <td class="yes"><span title="Yes"></span></td>
+              </tr>
+              <tr class="benefits">
+                <th class="benefit">
+                  <p>Logo stickers in conference sticker bag<span class="asterisk" style="--materials-due-date: 'March 4, 2019'">*</span></p>
+                </th>
+                <td class="no"><span title="No"></span></td>
+                <td class="no"><span title="No"></span></td>
+                <td class="yes"><span title="Yes"></span></td>
+                <td class="yes"><span title="Yes"></span></td>
+              </tr>
+              <tr class="benefits">
+                <th class="benefit">
+                  <p>Logo on screens during breaks and at day's end</p>
+                </th>
+                <td class="no"><span title="No"></span></td>
+                <td class="no"><span title="No"></span></td>
+                <td class="no"><span title="No"></span></td>
+                <td class="yes"><span title="Yes"></span></td>
+              </tr>
+              <tr class="benefits">
+                <th class="benefit">
+                  <p>2-minute plenary Keynote address</p>
+                </th>
+                <td class="no"><span title="No"></span></td>
+                <td class="no"><span title="No"></span></td>
+                <td class="no"><span title="No"></span></td>
+                <td class="yes"><span title="Yes"></span></td>
+              </tr>
+              <tr class="benefits">
+                <th class="benefit">
+                  <p>Logo included on conference videos</p>
+                </th>
+                <td class="no"><span title="No"></span></td>
+                <td class="no"><span title="No"></span></td>
+                <td class="no"><span title="No"></span></td>
+                <td class="yes"><span title="Yes"></span></td>
+              </tr>
+              <tr class="benefits">
+                <th class="benefit">
+                  <p>Postings on Official Ember Job Board</p>
+                </th>
+                <td class="yes">
+                  <p>0</p>
+                </td>
+                <td class="yes">
+                  <p>1</p>
+                </td>
+                <td class="yes">
+                  <p>2</p>
+                </td>
+                <td class="yes">
+                  <p>3</p>
+                </td>
+              </tr>
+              <tr class="benefits">
+                <th class="benefit">
+                  <p>Conference session passes <span class="disclaimer">Training passes not included.</span> </p>
+                </th>
+                <td class="yes">
+                  <p>1</p>
+                </td>
+                <td class="yes">
+                  <p>2</p>
+                </td>
+                <td class="yes">
+                  <p>3</p>
+                </td>
+                <td class="yes">
+                  <p>5</p>
+                </td>
+              </tr>
+              <tr class="cost">
+                <th></th>
+                <td>
+                  <p>$3,000</p>
+                </td>
+                <td>
+                  <p>$6,000</p>
+                </td>
+                <td>
+                  <p>$10,000</p>
+                </td>
+                <td>
+                  <p>$14,000</p>
+                </td>
+              </tr>
+              </tbody>
+              <tfoot>
+              <tr>
+                <td>* Materials are due by March 4, 2019</td>
+              </tr>
+              </tfoot>
+            </table>
+          </div>
+          <div class="contact">
+            <div class="container">
+              <h2>Talk to Leah to sign up.</h2>
+              <p>She'll arrange payment and help you get the best out of your sponsorshop.</p><a class="button stroked" href="mailto:sponsorships@emberconf.com">Email about sponsorship packages</a>
+              <p class="secondary-cta"><a href="https://tilde.wufoo.com/forms/emberconf-2019-a-la-carte-sponsorships/" target="_blank">or shop a la carte sponsorships</a></p>
+              <p class="prospectus-callout"><em>Enjoy PDFs?</em> <a href="images/EmberConf-2019-Sponsor-Prospectus.pdf">Download our sponsorship prospectus.</a></p>
+            </div>
+          </div>
+        </div>
+      {{else}}
+        <ol class="friend-categories">
+        <li class="package_sponsors">
+          <div class="container">
+            <ol class="friend-tiers">
+              <li class="diamond">
+                <div class="group-header">
+                  <h2>Diamond</h2></div>
+                <ul class="friends">
+                  <li class="friend">
+                    <div class="logo">
+                      <div class="wrapper">
+                        <a href="https://redshelf.com" target="_blank"><img alt="RedShelf" src="images/friends/redshelf-logo.png"></a>
+                      </div>
+                    </div>
+                    <div class="description">
+                      <p>Working with publishers, institutions, and campus bookstores as a leading supplier of digital learning materials, RedShelf streamlines the discovery and distribution of eBooks, eTextbooks, and other digital content for today's student. Using a browser-based platform, we provide easily accessible and affordable course materials to students everywhere to improve classroom outcomes.</p>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="gold">
+                <div class="group-header">
+                  <h2>Gold</h2></div>
+                <ul class="friends">
+                  <li class="friend">
+                    <div class="logo">
+                      <div class="wrapper">
+                        <a href="https://www.crowdstrike.com/" target="_blank"><img alt="CrowdStrike" src="images/friends/crowdstrike-logo.png"></a>
+                      </div>
+                    </div>
+                    <div class="description">
+                      <p>Crowdstrike is a cybersecurity platform that helps customers stop breaches. We use machine learning, human intelligence, and proactive hunting by industry-leading security analysts to protect our clients from common malware attacks to sophisticated nation-state adversaries. We proudly use Ember for our customer-facing and internal interfaces, and have since before 1.0.</p>
+                    </div>
+                  </li>
+                  <li class="friend">
+                    <div class="logo">
+                      <div class="wrapper">
+                        <a href="http://www.discourse.com" target="_blank"><img alt="Discourse" src="images/friends/discourse-logo.svg"></a>
+                      </div>
+                    </div>
+                    <div class="description">
+                      <p>Discourse is the 100% open source discussion platform built for the next decade of the Internet. It is a modern take on traditional forum software and is designed to foster healthy online behaviour. Features like powerful spam control, an extensible plugin-based architecture and full database access make Discourse an excellent solution for most communities.</p>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="silver">
+                <div class="group-header">
+                  <h2>Silver</h2></div>
+                <ul class="friends">
+                  <li class="friend">
+                    <div class="logo">
+                      <div class="wrapper">
+                        <a href="http://simplabs.com" target="_blank"><img alt="simplabs" src="images/friends/simplabs-logo.svg"></a>
+                      </div>
+                    </div>
+                    <div class="description">
+                      <p>simplabs is a web engineering consultancy in Munich, Germany. We work with clients ranging from startups to enterprises, consulting and building solutions with Ember.js, Ruby on Rails and Elixir. We also provide individual and group training.</p>
+                    </div>
+                  </li>
+                  <li class="friend">
+                    <div class="logo">
+                      <div class="wrapper">
+                        <a href="http://www.embermap.com" target="_blank"><img alt="EmberMap" src="images/friends/embermap-logo.svg"></a>
+                      </div>
+                    </div>
+                    <div class="description">
+                      <p>EmberMap is a collection of video tutorials, blog posts and podcasts for professional Ember.js developers. We help teams improve their UI development skills and stay up-to-date with the latest Ember techniques. We’re passionate about our community and give back through speaking, training and open-source software.</p>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="bronze">
+                <div class="group-header">
+                  <h2>Bronze</h2></div>
+                <ul class="friends">
+                  <li class="friend">
+                    <div class="logo">
+                      <div class="wrapper">
+                        <a href="https://shipshape.io" target="_blank"><img alt="ShipShape" src="images/friends/shipshape-logo.svg"></a>
+                      </div>
+                    </div>
+                    <div class="description">
+                      <p>Ship Shape is a consultancy specializing in all things Ember. We provide training to level up your team's Ember skills, staff augmentation to help crank out features, sponsored open source development to create addons you need for your product, and anything else Ember related you may need. We'll work with you to ensure your Ember app is the best it possibly can be!</p>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </li>
+        <li class="other_sponsors">
+          <div class="container">
+            <h2>Other Sponsors</h2>
+            <ol class="friend-tiers">
+              <li class="presenting_sponsor">
+                <div class="group-header">
+                  <h2>Presenting Sponsor</h2></div>
+                <ul class="friends">
+                  <li class="friend">
+                    <div class="logo">
+                      <div class="wrapper">
+                        <a href="http://www.skylight.io" target="_blank"><img alt="Skylight" src="images/friends/skylight-logo.svg"></a>
+                      </div>
+                    </div>
+                    <div class="description">
+                      <p>Skylight&#65279; is a smart profiler that lets you quickly diagnose and resolve performance issues with your Rails apps where it matters: in production. It's built by the fine folks at <a href="http://www.tilde.io">Tilde Inc</a>, who have spent the last few years building open source projects like Ember, Handlebars and Rails itself. Visit <a href="http://www.skylight.io">skylight.io</a> to start your free trial.</p>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="a_la_carte_sponsors">
+                <div class="group-header">
+                  <h2>A La Carte Sponsors</h2></div>
+                <ul class="friends">
+                  <li class="friend">
+                    <div class="logo">
+                      <div class="wrapper">
+                        <a href="http://www.crowdstrike.com" target="_blank"><img alt="Crowdstrike" src="images/friends/crowdstrike-logo.png"></a>
+                      </div>
+                    </div>
+                    <div class="description">
+                      <p>Childcare</p>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </li>
+      </ol>
+      {{/if}}
+
+
+
+    </div>
+  </section>
   <!--<script>-->
   <!--$(document).ready(function() {-->
   <!--$('.illustration').addClass('loaded');-->
   <!--});-->
   <!--</script>-->
 
+  <!--TODO-->
+  <!--$(document).ready(function() {-->
+  <!--function t() {-->
+  <!--if ("#2019-sponsors" != location.hash) {-->
+  <!--var t = $("#packages thead").outerHeight(),-->
+  <!--s = $("nav.fixed-header").outerHeight(),-->
+  <!--i = $("#packages").offset().top - s,-->
+  <!--r = $("tfoot").offset().top - s - t;-->
+  <!--window.pageYOffset > i ? (e.classList.add("sticky"), e.setAttribute("style", "padding-top: " + t + "px"), o.setAttribute("style", "top: " + s + "px")) : (e.classList.remove("sticky"), e.removeAttribute("style"), o.removeAttribute("style")), window.pageYOffset >= r && (e.classList.remove("sticky"), e.removeAttribute("style"), o.removeAttribute("style"))-->
+  <!--}-->
+  <!--}-->
+  <!--var e = document.getElementById("packages"),-->
+  <!--o = document.getElementById("table-header");-->
+  <!--window.onscroll = function() {-->
+  <!--$(window).width() > 511 && t()-->
+  <!--}, window.onresize = function() {-->
+  <!--$(window).width() > 511 ? t() : (e.classList.remove("sticky"), e.removeAttribute("style"), o.removeAttribute("style"))-->
+  <!--}-->
+  <!--});-->
 
   <Footer />
 

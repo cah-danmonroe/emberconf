@@ -2,6 +2,165 @@ import Service from '@ember/service'
 import { htmlSafe } from '@ember/string'
 
 export const SESSION = Object.freeze({
+  TRAINING_ONLY_REG: {
+    anchor: 'training-only-registration',
+    name: 'Training-Only Registration',
+    start: '8:30 am',
+    end: '9:30 am',
+    description: htmlSafe(`
+      <p>This registration window is reserved for folks attending one of our training classes, to make sure they're processed and seated in time for class.</p>
+    `)
+  },
+
+  TRAINING_ACTIVITIES_EARLY_CONF_REG: {
+    anchor: 'training-activities-and-early-conference-registration',
+    name: 'Training, Activities and Early Conference Registration',
+    start: '9:30 am',
+    end: '4:30 pm',
+    description: htmlSafe(`
+      <p>All attendees are welcome to drop by to register for any EmberConf trainings, activities, and for early Conference registration.</p>
+      <p>Grab your <strong>special, limited-edition swag item</strong> for folks registering for anything on Monday, to help keep the Tuesday morning registration rush to a minimum. While supplies last.</p>
+    `)
+  },
+
+  BONUS_CONF: {
+    anchor: 'bonusconf-sessions',
+    name: 'BonusConf Sessions',
+    start: '1:30 pm',
+    end: '5:00 pm',
+    description: htmlSafe(`
+      <p>Each year, we not-so-secretly run a small mini-conf on Monday, where we professionally record Bonus content for online release. With so many talented Ember people coming to town, how could we not take advantage and invite an audience?</p>
+      <p>Ticket price of $69 gains you entry to the entire afternoon. Stay for some talks, or all. Small audience, space limited.</p>
+      <div class="event-sessions">
+        <h4>This year's agenda includes:</h4>
+        <ol class="event-sessions">
+          <li>
+            <div class="time">
+              <p>1:30-2:00pm</p>
+            </div>
+            <div class="title-and-speaker">
+              <h5><p>Ember Data - It's Not Just for JSON API Anymore</p> </h5>
+              <ul class="speaker-names">
+                <li>Robert Wagner</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="time">
+              <p>2:10-2:40pm</p>
+            </div>
+            <div class="title-and-speaker">
+              <h5><p><code>ember new indie-software</code></p> </h5>
+              <ul class="speaker-names">
+                <li>Ryan LaBouve</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="time">
+              <p>2:50-3:20pm</p>
+            </div>
+            <div class="title-and-speaker">
+              <h5><p>TBD</p> </h5>
+              <ul class="speaker-names">
+                <li>TBD</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="time">
+              <p>3:30-4:00pm</p>
+            </div>
+            <div class="title-and-speaker">
+              <h5><p>Maintaining an Ember Application at Scale</p> </h5>
+              <ul class="speaker-names">
+                <li>Chris Ng</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="time">
+              <p>4:10-4:40pm</p>
+            </div>
+            <div class="title-and-speaker">
+              <h5><p>TBD</p> </h5>
+              <ul class="speaker-names">
+                <li>TBD</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div><a class="button stroked" href="register.html">Register to attend</a></div>
+    `),
+    tags: [
+      {css:'paid-addon', text: 'Paid addon'}
+    ]
+  },
+
+  FOOD_CART: {
+    anchor: 'food-cart-tour',
+    name: 'Food Cart Tour',
+    start: '2:00 pm',
+    end: '5:00 pm',
+    description: htmlSafe(`
+      <p>Join an intimate group of your fellow Ember friends for a brew-focused adventure in the heart of Portland's trendy Southeast. We'll take a guided tour walking to and from three iconic Portland Breweries, complete with snacks and tastings.</p>
+      <p>Ticket price of $99 covers all the tastings, snacks and samples along the way, your super-fun tour guide, a tasting journal, souvenir glass and gratuity for your tour guide.</p>
+      <p>As with all EmberConf activities that involve alcohol, drink responsibly! Don't overdo it: we'll also provide lots of snacks along the way to help make sure you don't. Rain or shine.</p> <a class="button stroked" href="register.html">Register to attend</a></div>
+    `),
+    tags: [
+      {css:'paid-addon', text: 'Paid addon'}
+    ]
+  },
+
+  BREWERY: {
+    anchor: 'southeast-brewery-extravaganza',
+    name: 'Southeast Brewery Extravaganza!',
+    start: '2:00 pm',
+    end: '5:00 pm',
+    description: htmlSafe(`
+      <p>Join an intimate group of your fellow Ember friends for a brew-focused adventure in the heart of Portland's trendy Southeast. We'll take a guided tour walking to and from three iconic Portland Breweries, complete with snacks and tastings.</p>
+      <p>Ticket price of $99 covers all the tastings, snacks and samples along the way, your super-fun tour guide, a tasting journal, souvenir glass and gratuity for your tour guide.</p>
+      <p>As with all EmberConf activities that involve alcohol, drink responsibly! Don't overdo it: we'll also provide lots of snacks along the way to help make sure you don't. Rain or shine.</p> <a class="button stroked" href="register.html">Register to attend</a></div>
+    `),
+    tags: [
+      {css:'paid-addon', text: 'Paid addon'}
+    ]
+  },
+
+  REGISTRATION: {
+    anchor: 'registration',
+    name: 'Registration',
+    start: '8:30 am'
+  },
+
+  LUNCH: {
+    anchor: 'lunch',
+    name: 'Lunch',
+    start: '12:00 pm',
+    end: '1:30 pm'
+  },
+
+  SNACK_BREAK: {
+    anchor: 'snack-break',
+    name: 'Snack Break',
+    start: '3:30 pm',
+    end: '4:00 pm'
+  },
+
+  HAPPY_HOUR: {
+    anchor: 'happy-hour',
+    name: 'Happy Hour!',
+    start: '6:00 pm',
+    end: '7:00 pm'
+  },
+
+  CLOSING_KEYNOTE: {
+    anchor: 'closing-keynote',
+    name: 'Closing Keynote',
+    start: '5:30 pm',
+    end: '6:15 pm'
+  },
+
   KEYNOTE:
     {
       name: 'Opening Keynote',
@@ -9,7 +168,10 @@ export const SESSION = Object.freeze({
         <p>Join Tom and Yehuda for a review of Ember in 2018/2019 and a look forward to the future.</p>
       `),
       anchor: 'opening-keynote',
-      time: 'EmberConf Day 1 - 9:30 am–10:30 am'
+      day: 'EmberConf Day 1',
+      start: '9:30 am',
+      end: '10:30 am',
+      speakers: [{ id: 'yehuda-katz', name: 'Yehuda Katz'}, { id: 'tom-dale', name: 'Tom Dale'}]
     },
 
   DONTBREAKTHEWEB:
@@ -19,7 +181,10 @@ export const SESSION = Object.freeze({
         <p>While JavaScript frameworks saved developers from tedium, they have also been notorious for completely disregarding accessibility. This talk will explore how this is different with Ember.js due to purposeful efforts, and how JS engineers can shift their mindset (just a little!) to make the apps we build more accessible for people with disabilities.</p>
       `),
       anchor: 'don-t-break-the-web',
-      time: 'EmberConf Day 1&nbsp;-&nbsp;5:30 pm–6:00 pm'
+      day: 'EmberConf Day 1',
+      start: '5:30 pm',
+      end: '6:00 PM',
+      speakers: [{ id: 'melanie-sumner', name: 'Melanie Sumner'}]
     },
 
   MINITALKS:
@@ -89,7 +254,10 @@ export const SESSION = Object.freeze({
         </div>
       `),
       anchor: 'minitalks',
-      time: 'EmberConf Day 2&nbsp;-&nbsp;4:00 pm–4:30 pm'
+      day: 'EmberConf Day 2',
+      start: '4:00 PM',
+      end: '4:30 PM',
+      speakers: [{ id: 'vaidehi-joshi', name: 'Vaidehi Joshi'},{ id: 'danielle-adams', name: 'Danielle Adams'}]
     },
 
   CRAFTINGWEBCOMICS:
@@ -100,7 +268,10 @@ export const SESSION = Object.freeze({
         <p>We'll explore how both recent and matured Web APIs can be leveraged to tell our own, rich and interactive stories on the web. We’ll also dive into how you can use Ember.js to help create an online comic book that makes any comic art fan’s heart leap for joy.</p>
       `),
       anchor: 'crafting-web-comics-with-ember',
-      time: 'EmberConf Day 1&nbsp;-&nbsp;3:00 pm–3:30 pm'
+      day: 'EmberConf Day 1',
+      start: '3:00 pm',
+      end: '3:30 pm',
+      speakers: [{ id: 'jessica-jordan', name: 'Jessica Jordan'}]
     },
 
   WOMENHELPINGWOMEN:
@@ -111,17 +282,24 @@ export const SESSION = Object.freeze({
         <p><em>Please note that this is a women-only event that intends an inclusive definition of women. We are welcoming and respectful of trans women and any others who identify as women in a way that is significant to them.</em></p> <a class="button stroked" href="https://emberconf.com/register.html">Register to attend</a></div>
       `),
       anchor: 'whw-program-luncheon',
-      time: 'Pre-Conf Activities&nbsp;-&nbsp;12:00 pm–1:30 pm'
+      day: 'Pre-Conf Activities',
+      start: '12:00 pm',
+      end: '1:30 pm',
+      speakers: [{ id: 'leah-silber', name: 'Leah Silber'}],
+      tags: [ {css:'paid-addon', text: 'Paid addon'} ]
     },
 
-  MENTORSHIP:
+  MENTORSHIPMEETNGREET:
     {
       name: `Mentorship Program Meet n' Greet`,
       description: htmlSafe(`
         <p>This <em>invite-only</em> wine-and-cheese mixer is for members of the EmberConf Mentorship Program. Program applications have not opened yet.</p>
       `),
       anchor: 'mentorship-program-meet-n-greet',
-      time: 'Pre-Conf Activities&nbsp;-&nbsp;5:30 pm–7:30 pm'
+      day: 'Pre-Conf Activities',
+      start: '5:30 pm',
+      end: '7:30 pm',
+      speakers: [{ id: 'leah-silber', name: 'Leah Silber'}, { id: 'jen-weber', name: 'Jen Weber'}]
     },
 
   PUBLICSPEAKING:
@@ -132,7 +310,14 @@ export const SESSION = Object.freeze({
         <p>This training pairs well with our <em>Presentation Academy</em> afternoon session, as part of our Evangelism mentorship track.</p> <a class="button stroked" href="https://emberconf.com/register.html">Register to attend</a></div>
       `),
       anchor: 'public-speaking-101',
-      time: 'Pre-Conf Activities&nbsp;-&nbsp;9:00 am–11:30 am'
+      start: '9:00 am',
+      end: '11:30 am',
+      speakers: [{ id: 'bear-douglas', name: 'Bear Douglas'}],
+      tags: [
+        {css:'paid-addon', text: 'Paid addon'},
+        {css:'track evangelism', text: 'Evangelism'}
+      ],
+      day: 'Pre-Conf Activities'
     },
 
   BUILDINGBETTERCOMPONENTS:
@@ -143,7 +328,10 @@ export const SESSION = Object.freeze({
         <p>When creating a new component, you might ask yourself what data needs to be exposed, what kind of side effects it will have, or whether you need it to be generic and reusable or for one specific purpose. We'll explore these questions and more to help you build better components.</p>
       `),
       anchor: 'building-better-components',
-      time: 'EmberConf Day 2&nbsp;-&nbsp;1:30 pm–2:00 pm'
+      day: 'EmberConf Day 2',
+      start: '1:30 pm',
+      end: '2:00 pm',
+      speakers: [{ id: 'dianne-eramo', name: 'Dianne Eramo'}]
     },
 
   BUILDINGUISTYLEGUIDE:
@@ -154,7 +342,10 @@ export const SESSION = Object.freeze({
         <p>Did you know that Ember-CLI’s powerful addon system can be used to build a kit of reusable UI components? In this talk, you will learn how to build your own styleguide addon and how to use it to keep your UI consistent across apps.</p>
       `),
       anchor: 'building-a-ui-styleguide-in-ember',
-      time: 'EmberConf Day 1&nbsp;-&nbsp;10:45 am–11:15 am'
+      day: 'EmberConf Day 1',
+      start: '10:45 am',
+      end: '11:15 am',
+      speakers: [{ id: 'frederic-soumare', name: 'Frédéric Soumaré'}]
     },
 
   NOBADLEGOS:
@@ -164,7 +355,10 @@ export const SESSION = Object.freeze({
         <p>People often like to think of a piece of software as greater than the some of its parts. But what if the individual parts are garbage? Using component driven development, we can make sure the building blocks of our applications are robust, reusable, and tested. When we break development down in this manner, we can give each individual component the attention it needs in regards to accessibility.</p>
       `),
       anchor: 'no-bad-legos-a-toy-box-for-everybody',
-      time: 'EmberConf Day 2&nbsp;-&nbsp;4:45 pm–5:15 pm'
+      day: 'EmberConf Day 2',
+      start: '4:45 pm',
+      end: '5:15 pm',
+      speakers: [{ id: 'howie-bollinger', name: 'Howie Bollinger'}]
     },
 
   DEALINGWITHDATA:
@@ -175,7 +369,10 @@ export const SESSION = Object.freeze({
         <p>This talk will walk through a modern cruftless data experience in Ember and demonstrate how you can use Ember Data's modular approach to create compelling experiences in even the most challenging data domains.</p>
       `),
       anchor: 'dealing-with-data-in-2019',
-      time: 'EmberConf Day 2&nbsp;-&nbsp;9:30 am–10:00 am'
+      day: 'EmberConf Day 2',
+      start: '9:30 am',
+      end: '10:00 am',
+      speakers: [{ id: 'igor-terzic', name: 'Igor Terzic'}]
     },
 
   COMPOSABLECONCURRENCYTASKS:
@@ -186,7 +383,10 @@ export const SESSION = Object.freeze({
         <p>Let's do a deep dive into the inner workings of Ember Concurrency. We’ll learn how to build our own abstractions that encapsulate complex tasks for reuse in our apps. We’ll build composable, higher-order tasks that put more power into the hands of you and your fellow developers.</p>
       `),
       anchor: 'composable-concurrency-tasks',
-      time: 'EmberConf Day 2&nbsp;-&nbsp;2:15 pm–2:45 pm'
+      day: 'EmberConf Day 2',
+      start: '2:15 pm',
+      end: '2:45 pm',
+      speakers: [{ id: 'isaac-ezer', name: 'Isaac Ezer'}]
     },
 
   TYPEDEMBER:
@@ -197,7 +397,10 @@ export const SESSION = Object.freeze({
         <p>Instead of a deep dive into using TypeScript with Ember, this talk will demonstrate everyday usage. We'll work to prove that switching to TypeScript to build your Ember apps and addons will make them more robust and maintainable, provide a better developer experience, and lead to improved productivity.</p>
       `),
       anchor: 'typed-ember-strong-types-for-better-apps',
-      time: 'EmberConf Day 1&nbsp;-&nbsp;2:15 pm–2:45 pm'
+      day: 'EmberConf Day 1',
+      start: '2:15 pm',
+      end: '2:45 pm',
+      speakers: [{ id: 'james-c-davis', name: 'James C. Davis'}]
     },
 
   PRESENTATIONACADEMY:
@@ -210,7 +413,11 @@ export const SESSION = Object.freeze({
         <p>This training pairs well with our <em>Public Speaking 101</em> morning session, as part of our Evangelism mentorship track.</p> <a class="button stroked" href="https://emberconf.com/register.html">Register to attend</a></div>
       `),
       anchor: 'presentation-academy-102',
-      time: 'Pre-Conf Activities&nbsp;-&nbsp;1:00 pm–4:00 pm'
+      day: 'Pre-Conf Activities',
+      start: '1:00 pm',
+      end: '4:00 pm',
+      speakers: [{ id: 'jennifer-wong', name: 'Jennifer Wong'},{ id: 'marcos-iglesias', name: 'Marcos Iglesias'}],
+      tags: [ {css:'paid-addon', text: 'Paid addon'}, {css:'track evangelism', text: 'Evangelism'} ]
     },
   NEWTOEMBER:
     {
@@ -220,7 +427,10 @@ export const SESSION = Object.freeze({
         <p>Eventually, I realized the mystery words are part of Ember addons! But with so many to learn, I was quickly overwhelmed. Let me walk you through my exploration of addons. How do you balance code time with addon learning time? From <code>ember-a11y-testing</code> to zoey, we’ll dig into Ember &amp; its addons, and strategies for persistent, sustained learning anyone can rely on</p>
       `),
       anchor: 'new-to-ember-what-are-all-these-things',
-      time: 'EmberConf Day 2&nbsp;-&nbsp;3:00 pm–3:30 pm'
+      day: 'EmberConf Day 2',
+      start: '3:00 pm',
+      end: '3:30 pm',
+      speakers: [{ id: 'jennifer-wong', name: 'Jennifer Wong'}]
     },
 
   COMMUNICATIONANDCONVENTION:
@@ -231,7 +441,10 @@ export const SESSION = Object.freeze({
         <p>This talk explores how Ember's conventions democratize the language we use to describe our applications, enabling developers of all levels and backgrounds to communicate in a meaningful and productive way. Ember is a tool that makes it easier to be a better, more ambitious developer, to communicate new ideas faster, and to facilitate a culture of cascading mentorship and growth within teams.</p>
       `),
       anchor: 'communication-and-convention',
-      time: 'EmberConf Day 2&nbsp;-&nbsp;10:45 am–11:15 am'
+      day: 'EmberConf Day 2',
+      start: '10:45 am',
+      end: '11:15 am',
+      speakers: [{ id: 'julia-donaldson', name: 'Julia Donaldson'}]
     },
 
   YOURDESKTOPSTUDIO:
@@ -242,7 +455,10 @@ export const SESSION = Object.freeze({
         <p>This tactical talk will help with practical tips, tricks and anecdotes to optimize your environment and keep you in your happy place, all work-day long.</p>
       `),
       anchor: 'your-desktop-the-studio',
-      time: 'EmberConf Day 1&nbsp;-&nbsp;11:30 am–12:00 pm'
+      day: 'EmberConf Day 1',
+      start: '11:30 am',
+      end: '12:00 pm',
+      speakers: [{ id: 'kate-ruggeri', name: 'Kate Ruggeri'}]
     },
 
   EMBERFOREVERYONE:
@@ -253,7 +469,10 @@ export const SESSION = Object.freeze({
         <p>At <em>code Afrique</em>, where we help the community by offering a free weekend intensive bootcamp, we explored and have now achieved success with ember where we had earlier failed. The aim of this talk is to show, what we tried, where we failed and how ember brought us success like no other.</p>
       `),
       anchor: 'ember-is-for-everyone',
-      time: 'EmberConf Day 2&nbsp;-&nbsp;11:30 am–12:00 pm'
+      day: 'EmberConf Day 2',
+      start: '11:30 am',
+      end: '12:00 pm',
+      speakers: [{ id: 'kenigbolo-meya-stephen', name: 'Kenigbolo Meya Stephen'}]
     },
 
   COMMUNITYDOCUMENTATION:
@@ -265,7 +484,10 @@ export const SESSION = Object.freeze({
         <p>After scraping and analysing just about 5000 readme files from Ember addons created by the community, I’ll present common pitfalls and ways to improve our community documentation.</p>
       `),
       anchor: 'the-state-of-community-documentation',
-      time: 'EmberConf Day 2&nbsp;-&nbsp;10:00 am–10:30 am'
+      day: 'EmberConf Day 2',
+      start: '10:00 am',
+      end: '10:30 am',
+      speakers: [{ id: 'kenneth-larsen', name: 'Kenneth Larsen'}]
     },
 
   ANATOMYOFADDONECOSYSTEM:
@@ -277,7 +499,10 @@ export const SESSION = Object.freeze({
         <p>We’ll do a technical deep dive into the mechanics of how the <code>ember-service-worker</code> ecosystem utilizes plugins. Along the way we’ll investigate the addon lifecycle and broccoli customizations. Finally we’ll touch on the unique problems of testing such addons.</p>
       `),
       anchor: 'anatomy-of-an-addon-ecosystem',
-      time: 'EmberConf Day 1&nbsp;-&nbsp;4:00 pm–4:30 pm'
+      day: 'EmberConf Day 1',
+      start: '4:00 pm',
+      end: '4:30 pm',
+      speakers: [{ id: 'lisa-backer', name: 'Lisa Backer'}]
     },
 
   COMPAREPATTERNS:
@@ -288,7 +513,10 @@ export const SESSION = Object.freeze({
         <p>In this talk we'll talk through real-world experiences using both, to give audience members a better understanding of the key differences and tradeoffs when choosing between React-based apps and ember apps.</p>
       `),
       anchor: 'comparing-patterns-in-react-and-ember',
-      time: 'EmberConf Day 1&nbsp;-&nbsp;1:30 pm–2:00 pm'
+      day: 'EmberConf Day 1',
+      start: '1:30 pm',
+      end: '2:00 pm',
+      speakers: [{ id: 'preston-sego', name: 'Preston Sego'}]
     },
 
   EMBERTESTSTRATEGY:
@@ -300,7 +528,10 @@ export const SESSION = Object.freeze({
         <p>In this talk we'll take many of these tried and true test strategies and show how one would apply them in a real way to an Ember project.</p>
       `),
       anchor: 'developing-an-ember-test-strategy',
-      time: 'EmberConf Day 1&nbsp;-&nbsp;4:45 pm–5:15 pm'
+      day: 'EmberConf Day 1',
+      start: '4:45 pm',
+      end: '5:15 pm',
+      speakers: [{ id: 'todd-jordan', name: 'Todd Jordan'}]
     },
 
   MIGRATINGLARGEAPP:
@@ -312,7 +543,11 @@ export const SESSION = Object.freeze({
         <p>Join us as we discuss migration strategies and walk through moving an existing backend to Ember. When we’re done, you’ll have a working, tested Ember app, a new set of tools and the ability to move your app to Ember while still regularly shipping new features and business value.</p> <a class="button stroked" href="https://emberconf.com/register.html">Register to attend</a></div>
       `),
       anchor: 'migrating-a-large-app-in-steps',
-      time: 'Pre-Conf Activities&nbsp;-&nbsp;9:00 am–12:00 pm'
+      day: 'Pre-Conf Activities',
+      start: '9:00 am',
+      end: '12:00 pm',
+      speakers: [{ id: 'david-baker', name: 'David Baker'}, { id: 'martyn-ling', name: 'Martyn Ling'}],
+      tags: [ {css:'paid-addon', text: 'Paid addon'}, {css:'track advanced-ember', text: 'Advanced Ember'} ]
     },
 
   BUILDWYSIWYG:
@@ -324,7 +559,11 @@ export const SESSION = Object.freeze({
         <p>You will leave this session with a minimal, but working, accessible WYSIWYG application that is ready for all the features you will want to add.</p> <a class="button stroked" href="https://emberconf.com/register.html">Register to attend</a></div>
       `),
       anchor: 'build-a-sketch-like-wysiwyg-app-with-ember',
-      time: 'Pre-Conf Activities&nbsp;-&nbsp;9:00 am–12:00 pm'
+      day: 'Pre-Conf Activities',
+      start: '9:00 am',
+      end: '12:00 pm',
+      speakers: [{ id: 'spencer-price', name: 'Spencer Price'}],
+      tags: [ {css:'paid-addon', text: 'Paid addon'}, {css:'track ux', text: 'UX'} ]
     },
 
   MODERNEMBEROCTANE:
@@ -348,7 +587,11 @@ export const SESSION = Object.freeze({
         <p>The workshop will assume some previous experience with Ember.</p> <a class="button stroked" href="https://emberconf.com/register.html">Register to attend</a></div>
       `),
       anchor: 'modern-ember-with-octane',
-      time: 'Pre-Conf Activities&nbsp;-&nbsp;9:00 am–12:00 pm'
+      day: 'Pre-Conf Activities',
+      start: '9:00 am',
+      end: '12: 00 pm',
+      speakers: [{ id: 'erik-bryn', name: 'Erik Bryn'}, { id: 'ryan-tablada', name: 'Ryan Tablada'}],
+      tags: [ {css:'paid-addon', text: 'Paid addon'}, {css:'track modern-ember', text: 'Modern Ember'} ]
     },
 
   USABILITYTESTING:
@@ -368,7 +611,11 @@ export const SESSION = Object.freeze({
         <p>Whether or not you have dedicated experience designers on your team, this workshop can help you navigate the field and make your own contribution.</p> <a class="button stroked" href="https://emberconf.com/register.html">Register to attend</a></div>
       `),
       anchor: 'usability-testing-for-developer-on-a-shoestring-budget',
-      time: 'Pre-Conf Activities&nbsp;-&nbsp;1:00 pm–4:00 pm'
+      day: 'Pre-Conf Activities',
+      start: '1:00 pm',
+      end: '4:00 pm',
+      speakers: [{ id: 'kavitha-krishnan', name: 'Kavitha Krishnan'}],
+      tags: [ {css:'paid-addon', text: 'Paid addon'}, {css:'track ux', text: 'UX'} ]
     },
 
   SUPERCHARGEEMBERWITHOCTANE:
@@ -402,7 +649,11 @@ export const SESSION = Object.freeze({
         <a class="button stroked" href="https://emberconf.com/register.html">Register to attend</a></div>
       `),
       anchor: 'supercharging-ember-octane-with-typescript',
-      time: 'Pre-Conf Activities&nbsp;-&nbsp;1:00 pm–4:00 pm'
+      day: 'Pre-Conf Activities',
+      start: '1:00 pm',
+      end: '4:00 pm',
+      speakers: [{ id: 'chris-krycho', name: 'Chris Krycho'}],
+      tags: [ {css:'paid-addon', text: 'Paid addon'}, {css:'track modern-ember', text: 'Modern Ember'} ]
     },
 
   CONTRIBUTORSWORKSHOP:
@@ -415,17 +666,11 @@ export const SESSION = Object.freeze({
         <p>The workshop will include some formal instruction, guidance from a team of experienced contributors, and hands-on coding time. Attendees should bring a laptop, budget an hour of setup time in the week before the workshop, and watch for emailed instructions about setup.</p> <a class="button stroked" href="https://emberconf.com/register.html">Register to attend</a></div>
       `),
       anchor: 'contributors-workshop',
-      time: 'Pre-Conf Activities&nbsp;-&nbsp;9:00 am–12:00 pm'
-    },
-
-  MENTORSHIPMEETNGREET:
-    {
-      name: `Mentorship Program Meet n' Greet`,
-      description: htmlSafe(`
-        <p>This <em>invite-only</em> wine-and-cheese mixer is for members of the EmberConf Mentorship Program. Program applications have not opened yet.</p>
-      `),
-      anchor: 'mentorship-program-meet-n-greet',
-      time: 'Pre-Conf Activities&nbsp;-&nbsp;5:30 pm–7:30 pm'
+      day: 'Pre-Conf Activities',
+      start: '9:00 am',
+      end: '12:00 am',
+      speakers: [{ id: 'jen-weber', name: 'Jen Weber'},{ id: 'ricardo-mendes', name: 'Ricardo Mendes'}],
+      tags: [ {css:'paid-addon', text: 'Paid addon'} ]
     },
 
   EATYOURGREENSBROCCOLI:
@@ -437,7 +682,11 @@ export const SESSION = Object.freeze({
         <p>By the end of this talk, participants will be able to write their own broccoli plugins, and integrate those into Ember with Ember addons.</p> <a class="button stroked" href="https://emberconf.com/register.html">Register to attend</a></div>
       `),
       anchor: 'eat-your-greens-a-broccoli-js-tutorial',
-      time: 'Pre-Conf Activities&nbsp;-&nbsp;1:00 pm–4:00 pm'
+      day: 'Pre-Conf Activities',
+      start: '1:00 pm',
+      end: '4:00 pm',
+      speakers: [{ id: 'oli-griffiths', name: 'Oli Griffiths'}],
+      tags: [ {css:'paid-addon', text: 'Paid addon' } ]
     },
 
   ROBOSTDATAFETCHING:
@@ -466,7 +715,11 @@ export const SESSION = Object.freeze({
         <p>We can’t wait to share with you all the lessons we’ve learned over the past few years running EmberMap and helping various teams solve their data-loading problems!</p> <a class="button stroked" href="https://emberconf.com/register.html">Register to attend</a></div>
       `),
       anchor: 'robust-data-fetching',
-      time: 'Pre-Conf Activities&nbsp;-&nbsp;9:00 am–12:00 pm'
+      day: 'Pre-Conf Activities',
+      start: '9:00 am',
+      end: '12:00 pm',
+      speakers: [{ id: 'sam-selikoff', name: 'Sam Selikoff'}, { id: 'ryan-toronto', name: 'Ryan Toronto'} ],
+      tags: [ {css:'paid-addon', text: 'Paid addon' } ]
     },
 
   REALWORLDANIMATIONS:
@@ -487,7 +740,11 @@ export const SESSION = Object.freeze({
         <p>You will leave this session having coded several animations yourself, along with the knowledge needed to bring them back into the apps you work on every day.</p> <a class="button stroked" href="https://emberconf.com/register.html">Register to attend</a></div>
       `),
       anchor: 'real-world-animations',
-      time: 'Pre-Conf Activities&nbsp;-&nbsp;1:00 pm–4:00 pm'
+      day: 'Pre-Conf Activities',
+      start: '1:00 pm',
+      end: '4:00 pm',
+      speakers: [{ id: 'sam-selikoff', name: 'Sam Selikoff'}, { id: 'ryan-toronto', name: 'Ryan Toronto'} ],
+      tags: [ {css:'paid-addon', text: 'Paid addon' }, {css:'track advanced-ember', text: 'Advanced Ember'} ]
     }
 })
 

@@ -828,6 +828,24 @@ input[type=button],input[type=text]{
   margin-right:auto;
   margin-left:auto
 }
+.track{
+  padding:0.2rem 0.4rem;
+  border-radius:.2rem;
+  margin-left:1rem;
+  font-weight:400 !important
+}
+.track.ux{
+  background-color:rgba(97,166,69,0.3)
+}
+.track.modern-ember{
+  background-color:rgba(22,154,157,0.25)
+}
+.track.evangelism{
+  background-color:rgba(52,31,121,0.15)
+}
+.track.advanced-ember{
+  background-color:rgba(224,92,67,0.2)
+}
 header canvas{
   position:absolute;
   top:-1.7rem;
@@ -1026,6 +1044,10 @@ header .canvas::before{
     margin-right:2rem
   }
 }
+.navigation.fixed-header>ul li:last-child .button:hover,.navigation.fixed-header>ul li:last-child .menu-trigger:hover{
+  -webkit-box-shadow:none;
+  box-shadow:none
+}
 .navigation.fixed-header>ul .drawer>a::after{
   border-color:#2e262d transparent transparent transparent
 }
@@ -1212,6 +1234,14 @@ header .canvas::before{
 .navigation ul.mobile-menu>li:last-child{
   -webkit-transform:scale(1);
   transform:scale(1)
+}
+.navigation ul.mobile-menu>li:last-child .button,.navigation ul.mobile-menu>li:last-child .menu-trigger{
+  padding-top:2rem;
+  padding-bottom:2rem
+}
+.navigation ul.mobile-menu>li:last-child .button:hover,.navigation ul.mobile-menu>li:last-child .menu-trigger:hover{
+  -webkit-box-shadow:none;
+  box-shadow:none
 }
 .navigation ul.mobile-menu>li:last-child::after{
   display:none
@@ -1645,7 +1675,7 @@ header h1{
   justify-content:center
 }
 .friends-footer ul>li,.past-friends-footer ul>li{
-  height:4rem;
+  height:6rem;
   width:auto;
   overflow:hidden;
   margin-bottom:3rem;
@@ -4694,9 +4724,9 @@ header h1{
   display:flex;
   -ms-flex-wrap:wrap;
   flex-wrap:wrap;
-  -webkit-box-pack:justify;
-  -ms-flex-pack:justify;
-  justify-content:space-between
+  -webkit-box-pack:center;
+  -ms-flex-pack:center;
+  justify-content:center
 }
 @media screen and (min-width: 46em){
   #friends .a_la_carte_sponsors ul{
@@ -4727,7 +4757,7 @@ header h1{
   text-align:center
 }
 #friends .a_la_carte_sponsors ul li .logo .wrapper a img{
-  height:4rem;
+  height:6rem;
   width:auto
 }
 #friends .a_la_carte_sponsors ul li .description p{
@@ -4877,6 +4907,7 @@ header h1{
     -webkit-box-pack:end;
     -ms-flex-pack:end;
     justify-content:flex-end;
+    overflow:visible;
     -ms-flex-wrap:nowrap;
     flex-wrap:nowrap;
     border-width:.1rem;
@@ -4925,10 +4956,20 @@ header h1{
 }
 #friends .benefit .asterisk::after{
   content:"Materials are due by " var(--materials-due-date) ".";
-  display:block
+  display:none
+}
+@media screen and (min-width: 32em){
+  #friends .benefit .asterisk::after{
+    display:block
+  }
 }
 #friends .benefit .asterisk:hover{
-  cursor:help
+  cursor:default
+}
+@media screen and (min-width: 32em){
+  #friends .benefit .asterisk:hover{
+    cursor:help
+  }
 }
 #friends .benefit .limited-quantities,#friends .benefit .paid-addon,#friends .benefit .sold-out{
   margin-right:0.75rem
@@ -5557,6 +5598,11 @@ header h1{
 }
 @media screen and (min-width: 22em){
   #mentorship-program .content-wrapper{
+    margin-top:5rem
+  }
+}
+@media screen and (min-width: 46em){
+  #mentorship-program .content-wrapper{
     margin-top:2rem
   }
 }
@@ -5716,7 +5762,7 @@ header h1{
 }
 @media screen and (min-width: 46em){
   #mentorship-program .opening figure .image-container{
-    min-height:30rem
+    min-height:14rem
   }
 }
 #mentorship-program .opening figcaption{
@@ -6287,6 +6333,9 @@ header h1{
     display:none
   }
 }
+#register .redirect p{
+  text-align:center
+}
 #register .faq-callout{
   padding-top:6rem;
   text-align:center
@@ -6386,9 +6435,21 @@ header h1{
     padding-left:5rem
   }
 }
+#page_eventview #TicketReg .ticket_row .ticket_type_name{
+  width:50% !important;
+  text-align:left
+}
+.discount_smartling_css{
+  min-width:20rem !important;
+  padding-top:0.7rem;
+  padding-bottom:0.7rem
+}
 #col_280{
   width:100%;
   display:none
+}
+#cc_csc{
+  min-width:4rem !important
 }
 #col_628{
   float:none;
@@ -6457,13 +6518,21 @@ header h1{
   display:none
 }
 #page_eventview td{
-  font-size:15px !important
+  font-size:15px !important;
+  text-align:right;
+  width:16.66666666%
 }
 #page_eventview #TicketReg .ticket_row .ticket_type_name,#page_eventview #order_summary_data .ticket_row .ticket_type_name{
   font-weight:700;
   font-size:15px;
   color:#2e262d;
   letter-spacing:-.02em
+}
+#page_eventview #TicketReg .ticket_row .ticket_type_name .monday,#page_eventview #order_summary_data .ticket_row .ticket_type_name .monday{
+  color:#812849
+}
+#page_eventview #TicketReg .ticket_row .ticket_type_name .wednesday,#page_eventview #order_summary_data .ticket_row .ticket_type_name .wednesday{
+  color:#169a9d
 }
 #page_eventview #TicketReg .ticket_row .ticket_type_name a,#page_eventview #TicketReg .ticket_row .ticket_type_name div,#page_eventview #order_summary_data .ticket_row .ticket_type_name a,#page_eventview #order_summary_data .ticket_row .ticket_type_name div{
   letter-spacing:0;
@@ -6567,12 +6636,21 @@ header h1{
 #page_eventview .panel_head2,#page_eventview .panel_head3{
   background-color:#f6f4f0;
   border-width:0;
-  padding:12px 11px 13px 14px;
+  padding:40px 11px 20px 14px;
   border-radius:0
+}
+#page_eventview .panel_head4{
+  background-color:#f6f4f0;
+  border-width:0;
+  padding:20px 11px 20px 14px;
+  border-radius:0
+}
+#page_eventview .panel_head4 h4,#page_eventview .panel_head4 #cfp-brainstorm .introduction .brainstorm-audio::after,#cfp-brainstorm .introduction #page_eventview .panel_head4 .brainstorm-audio::after,#page_eventview .panel_head4 #cfp-brainstorm .references span,#cfp-brainstorm .references #page_eventview .panel_head4 span{
+  font-size:15px !important
 }
 #page_eventview .panel_head2 h3,#page_eventview .panel_head3 h3{
   font-family:'Work Sans', sans-serif;
-  font-size:22px;
+  font-size:22px !important;
   color:#2e262d;
   font-weight:700;
   letter-spacing:-.035em;
@@ -6595,6 +6673,9 @@ header h1{
   color:#40586e;
   letter-spacing:.025em;
   font-weight:400
+}
+#page_eventview .ticket_table_head td:first-child{
+  text-align:left !important
 }
 #page_eventview .ticket_table{
   background-color:transparent
@@ -6689,13 +6770,14 @@ header h1{
   border-bottom:none;
   border-width:0
 }
-#page_eventview .panel_head3{
-  position:absolute;
-  width:100%;
+#page_eventview .panel_head3,#page_eventview .panel_head4{
+  position:relative;
+  width:calc(200% + 48px);
   border-bottom:none;
   border-width:0;
   margin-left:-17px;
-  margin-top:-13px !important
+  margin-top:-13px !important;
+  margin-bottom:-13px !important
 }
 #page_eventview #primary_cta a{
   font-size:14px;

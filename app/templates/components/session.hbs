@@ -2,8 +2,7 @@
   <p>{{session.name}}</p>
 </a>
 <div class="session-description switchable-content">
-  [{{session.anchor}}]]
-  {{#link-to "schedule" class="session-time"}}{{session.time}}{{/link-to}}
+  {{#link-to "schedule" class="session-time"}}{{session.day}} - {{session.start}} - {{session.end}}{{/link-to}}
   <div class="event-description">
     {{session.description}}
   </div>

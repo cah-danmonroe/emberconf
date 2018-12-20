@@ -17,6 +17,18 @@ module.exports = function(environment) {
       }
     },
 
+    googleFonts: [
+      'IBM Plex Mono:400',
+      'Work Sans:400,400i,700',
+      'Work Sans Bold:400,400i,700'
+    ],
+
+    // Set or update content security policies
+    contentSecurityPolicy: {
+      'font-src': "'self' fonts.gstatic.com",
+      'style-src': "'self' fonts.googleapis.com"
+    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
