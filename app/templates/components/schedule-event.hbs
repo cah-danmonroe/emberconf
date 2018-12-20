@@ -1,0 +1,32 @@
+<div class="event-time">
+  <p>{{event.start}}<span class="end-time">{{event.end}}</span></p>
+</div>
+<div class="event-info {{if event.description "switchable" "blank"}} {{if isOpen "open"}}">
+  <h3 class="toggle-link" id="{{event.anchor}}" {{action "toggleOpen"}}>
+    <p>{{event.name}}</p>
+  </h3>
+  {{#if event.speakers}}
+    <ul class="speaker-photos">
+        {{#each event.speakers as |speaker|}}
+          <li class="speaker-photo">
+            <div class="cropped-photo">
+              <a href="speakers.html#bear-douglas"><img alt="{{speaker.name}}" src="images/people/{{speaker.id}}.jpg"></a>
+            </div>
+          </li>
+      {{/each}}
+    </ul>
+    <ul class="speaker-names">
+      {{#each event.speakers as |speaker index|}}
+        <li><a href="speakers.html#erik-bryn">{{speaker.name}}</a></li>
+      {{/each}}
+    </ul>
+  {{/if}}
+  {{#each event.tags as |tag|}}
+    <span class="{{tag.css}}">{{tag.text}}</span>
+  {{/each}}
+  {{#if event.description}}
+    <div class="event-description switchable-content">
+      {{event.description}}
+    </div>
+  {{/if}}
+</div>

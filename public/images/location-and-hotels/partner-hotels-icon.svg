@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="142px" height="98px" viewBox="0 0 142 98" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>partner-hotels-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#F2C779" offset="0%"></stop>
+            <stop stop-color="#E15D44" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="73.1353099%" y1="143.801591%" x2="-1.11022302e-14%" y2="-20.8176429%" id="linearGradient-2">
+            <stop stop-color="#1E2E3B" offset="0%"></stop>
+            <stop stop-color="#558BBA" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-2.22044605e-14%" y1="-20.8176429%" x2="73.1353099%" y2="143.801591%" id="linearGradient-3">
+            <stop stop-color="#97588C" offset="0%"></stop>
+            <stop stop-color="#39325B" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="73.1353099%" y1="143.801591%" x2="-1.11022302e-14%" y2="-20.8176429%" id="linearGradient-4">
+            <stop stop-color="#6A366C" offset="0%"></stop>
+            <stop stop-color="#40698C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Location-and-Hotels-Icons" transform="translate(-140.000000, -1011.000000)">
+            <path d="M257.596575,1017.57432 C256.990523,1017.24856 256.3375,1016.98715 255.643989,1016.80132 C250.811467,1015.50645 245.844519,1018.37322 244.549364,1023.20681 C243.254494,1028.03933 246.121264,1033.00628 250.954849,1034.30143 C253.730981,1035.04529 256.551475,1034.41576 258.694738,1032.82892 C255.623467,1038.6204 248.864701,1041.7405 242.26385,1039.97181 C234.58698,1037.9148 230.033874,1030.02611 232.090433,1022.35093 C234.147444,1014.67406 242.036126,1010.12096 249.711308,1012.17751 C253.007661,1013.06077 255.728073,1015.01923 257.596575,1017.57432 Z" id="Rectangle-141" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+            <g id="partner-hotels-icon" transform="translate(140.000000, 1010.683594)">
+                <g id="Hotels" transform="translate(21.939275, 1.000000)">
+                    <polygon id="Combined-Shape" fill="url(#linearGradient-2)" points="72.7831241 48.8583078 98.7079405 48.8583078 98.7079405 97.7166155 72.7831241 97.7166155"></polygon>
+                    <rect id="Rectangle-22" fill="#272042" x="78.765774" y="88.1832872" width="5.98264993" height="9.53332834"></rect>
+                    <path d="M18.9450581,49.7224683 L18.9450581,35.8958996 L29.9132496,35.8958996 L29.9132496,43.8727661 L29.9132496,97.7166155 L-9.09494702e-13,97.7166155 L-9.09494702e-13,59.8264993 L18.9450581,49.7224683 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+                    <path d="M52.8438494,7.97686657 L55.8351743,7.97686657 L55.8351743,17.9479498 L73.7831241,17.9479498 L73.7831241,97.7166155 L28.9132496,97.7166155 L28.9132496,17.9479498 L46.8611994,17.9479498 L46.8611994,7.97686657 L49.8525244,7.97686657 L49.8525244,0 L52.8438494,0 L52.8438494,7.97686657 Z" id="Combined-Shape" fill="url(#linearGradient-4)"></path>
+                    <path d="M38.6759528,28.9161413 L48.647036,28.9161413 L48.647036,41.6666337 L38.6759528,41.6666337 L38.6759528,28.9161413 Z M52.8107422,28.9161413 L62.7818255,28.9161413 L62.7818255,41.6666337 L52.8107422,41.6666337 L52.8107422,28.9161413 Z M38.6759528,45.4203919 L48.647036,45.4203919 L48.647036,58.1708842 L38.6759528,58.1708842 L38.6759528,45.4203919 Z M52.8107422,45.4203919 L62.7818255,45.4203919 L62.7818255,58.1708842 L52.8107422,58.1708842 L52.8107422,45.4203919 Z M38.6759528,61.9246425 L48.647036,61.9246425 L48.647036,74.6751348 L38.6759528,74.6751348 L38.6759528,61.9246425 Z M52.8107422,61.9246425 L62.7818255,61.9246425 L62.7818255,74.6751348 L52.8107422,74.6751348 L52.8107422,61.9246425 Z" id="Combined-Shape" fill="#372F54" fill-rule="nonzero"></path>
+                </g>
+                <path d="M0.498554161,98.2180613 L141.090827,98.2180613" id="Line-2" stroke="#343434" stroke-width="2.5" stroke-linecap="square" fill-rule="nonzero"></path>
+                <polygon id="Star" fill="url(#linearGradient-1)" fill-rule="nonzero" points="17.8045071 46.3589538 16.3078513 51.9176011 14.8111955 46.3589538 9.25254829 44.862298 14.8111955 43.3656422 16.3078513 37.806995 17.8045071 43.3656422 23.3631544 44.862298"></polygon>
+                <polygon id="Star" fill="url(#linearGradient-1)" fill-rule="nonzero" points="131.541481 77.759707 130.764907 80.6439391 129.988332 77.759707 127.1041 76.9831327 129.988332 76.2065583 130.764907 73.3223262 131.541481 76.2065583 134.425713 76.9831327"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

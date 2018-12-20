@@ -1,0 +1,9 @@
+<div class="container day-intro">
+  <h2 class="date">{{day.date}}</h2>
+  <h2 class="title">{{day.title}}</h2>
+</div>
+<ul class="event-group container">
+  {{#each day.eventgroups as |eventgroup|}}
+    <ScheduleEventGroup @eventgroup={{eventgroup}} />
+  {{/each}}
+</ul>

@@ -1,0 +1,6 @@
+<h4 class="event-group">{{eventgroup.title}}</h4>
+<ol class="events">
+  {{#each eventgroup.events as |event|}}
+    <ScheduleEvent @event={{event}} />
+  {{/each}}
+</ol>
