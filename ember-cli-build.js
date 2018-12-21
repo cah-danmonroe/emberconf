@@ -9,7 +9,13 @@ module.exports = function(defaults) {
     sourcemaps: {
       enabled: EmberApp.env() !== 'production',
       extensions: ['js']
+    },
+
+    // default extensions: ['js', 'css', 'png', 'jpg', 'gif', 'map']
+    fingerprint: {
+      extensions: ['js', 'css', 'map']
     }
+
   });
 
   // Use `app.import` to add additional libraries to the generated

@@ -90,7 +90,7 @@ export const SESSION = Object.freeze({
             </div>
           </li>
         </ol>
-      </div><a class="button stroked" href="register.html">Register to attend</a></div>
+      </div><a class="button stroked" href="/register">Register to attend</a></div>
     `),
     tags: [
       {css:'paid-addon', text: 'Paid addon'}
@@ -105,7 +105,7 @@ export const SESSION = Object.freeze({
     description: htmlSafe(`
       <p>Join an intimate group of your fellow Ember friends for a brew-focused adventure in the heart of Portland's trendy Southeast. We'll take a guided tour walking to and from three iconic Portland Breweries, complete with snacks and tastings.</p>
       <p>Ticket price of $99 covers all the tastings, snacks and samples along the way, your super-fun tour guide, a tasting journal, souvenir glass and gratuity for your tour guide.</p>
-      <p>As with all EmberConf activities that involve alcohol, drink responsibly! Don't overdo it: we'll also provide lots of snacks along the way to help make sure you don't. Rain or shine.</p> <a class="button stroked" href="register.html">Register to attend</a></div>
+      <p>As with all EmberConf activities that involve alcohol, drink responsibly! Don't overdo it: we'll also provide lots of snacks along the way to help make sure you don't. Rain or shine.</p> <a class="button stroked" href="/register">Register to attend</a></div>
     `),
     tags: [
       {css:'paid-addon', text: 'Paid addon'}
@@ -120,7 +120,7 @@ export const SESSION = Object.freeze({
     description: htmlSafe(`
       <p>Join an intimate group of your fellow Ember friends for a brew-focused adventure in the heart of Portland's trendy Southeast. We'll take a guided tour walking to and from three iconic Portland Breweries, complete with snacks and tastings.</p>
       <p>Ticket price of $99 covers all the tastings, snacks and samples along the way, your super-fun tour guide, a tasting journal, souvenir glass and gratuity for your tour guide.</p>
-      <p>As with all EmberConf activities that involve alcohol, drink responsibly! Don't overdo it: we'll also provide lots of snacks along the way to help make sure you don't. Rain or shine.</p> <a class="button stroked" href="register.html">Register to attend</a></div>
+      <p>As with all EmberConf activities that involve alcohol, drink responsibly! Don't overdo it: we'll also provide lots of snacks along the way to help make sure you don't. Rain or shine.</p> <a class="button stroked" href="/register">Register to attend</a></div>
     `),
     tags: [
       {css:'paid-addon', text: 'Paid addon'}
@@ -278,8 +278,8 @@ export const SESSION = Object.freeze({
     {
       name: `WHW, Program Luncheon`,
       description: htmlSafe(`
-        <p>This luncheon is open to members of the EmberConf <em><a href="https://emberconf.com/mentorship-program.html#women-helping-women" target="_blank">Women Helping Women</a></em> Program and all Women in the Ember community.</p>
-        <p><em>Please note that this is a women-only event that intends an inclusive definition of women. We are welcoming and respectful of trans women and any others who identify as women in a way that is significant to them.</em></p> <a class="button stroked" href="https://emberconf.com/register.html">Register to attend</a></div>
+        <p>This luncheon is open to members of the EmberConf <em><a href="/mentorship-program?anc=women-helping-women" target="_blank">Women Helping Women</a></em> Program and all Women in the Ember community.</p>
+        <p><em>Please note that this is a women-only event that intends an inclusive definition of women. We are welcoming and respectful of trans women and any others who identify as women in a way that is significant to them.</em></p> <a class="button stroked" href="/register">Register to attend</a></div>
       `),
       anchor: 'whw-program-luncheon',
       day: 'Pre-Conf Activities',
@@ -307,7 +307,7 @@ export const SESSION = Object.freeze({
       name: `Public Speaking, 101`,
       description: htmlSafe(`
         <p>This fun workshop is a mix of lecture, exercises, and discussion, focused on practical techniques and principles that can help you level up your skills for speaking to any size of group. Learn how to adapt your body language and content to communicate effectively to dozens, hundreds, or thousands of people—and how to recover when things don’t go as planned.</p>
-        <p>This training pairs well with our <em>Presentation Academy</em> afternoon session, as part of our Evangelism mentorship track.</p> <a class="button stroked" href="https://emberconf.com/register.html">Register to attend</a></div>
+        <p>This training pairs well with our <em>Presentation Academy</em> afternoon session, as part of our Evangelism mentorship track.</p> <a class="button stroked" href="/register">Register to attend</a></div>
       `),
       anchor: 'public-speaking-101',
       start: '9:00 am',
@@ -410,7 +410,7 @@ export const SESSION = Object.freeze({
         <p>Sick of telling yourself that you are not made for public speaking? Do you feel that with a bit of help and some work you could be the one giving the talk at this conference?</p>
         <p>Don’t feel lonely, this happens to a lot of us. Even if we know that nobody can get to their full potential without public speaking skills.</p>
         <p>In this workshop, we will help you go over the process to become a conference speaker. From ideation to delivery we will teach you the essentials of every step, challenging you to come along and get out the session with a draft of the whole process.</p>
-        <p>This training pairs well with our <em>Public Speaking 101</em> morning session, as part of our Evangelism mentorship track.</p> <a class="button stroked" href="https://emberconf.com/register.html">Register to attend</a></div>
+        <p>This training pairs well with our <em>Public Speaking 101</em> morning session, as part of our Evangelism mentorship track.</p> <a class="button stroked" href="/register">Register to attend</a></div>
       `),
       anchor: 'presentation-academy-102',
       day: 'Pre-Conf Activities',
@@ -540,7 +540,7 @@ export const SESSION = Object.freeze({
       description: htmlSafe(`
         <p>You've weighed your options, you’ve done some test projects and Ember looks quite appealing for an SPA. Now, where do you start?</p>
         <p>Ember tutorials mostly assume "greenfield" development or that you’ll rebuild your app. But that’s often not feasible for a business. How do you shift to Ember without a complete rewrite?</p>
-        <p>Join us as we discuss migration strategies and walk through moving an existing backend to Ember. When we’re done, you’ll have a working, tested Ember app, a new set of tools and the ability to move your app to Ember while still regularly shipping new features and business value.</p> <a class="button stroked" href="https://emberconf.com/register.html">Register to attend</a></div>
+        <p>Join us as we discuss migration strategies and walk through moving an existing backend to Ember. When we’re done, you’ll have a working, tested Ember app, a new set of tools and the ability to move your app to Ember while still regularly shipping new features and business value.</p> <a class="button stroked" href="/register">Register to attend</a></div>
       `),
       anchor: 'migrating-a-large-app-in-steps',
       day: 'Pre-Conf Activities',
@@ -556,7 +556,7 @@ export const SESSION = Object.freeze({
       description: htmlSafe(`
         <p>Tools like Sketch and Framer are increasingly popular tools and Ember provides a great foundation for building one of these on your own.</p>
         <p>In this workshop, we will focus on implementing some of the more complex areas of user interactions in a manner that would be scalable enough to support all of the features we can imagine. We will discuss some of the tradeoffs and gotchas in this space, too.</p>
-        <p>You will leave this session with a minimal, but working, accessible WYSIWYG application that is ready for all the features you will want to add.</p> <a class="button stroked" href="https://emberconf.com/register.html">Register to attend</a></div>
+        <p>You will leave this session with a minimal, but working, accessible WYSIWYG application that is ready for all the features you will want to add.</p> <a class="button stroked" href="/register">Register to attend</a></div>
       `),
       anchor: 'build-a-sketch-like-wysiwyg-app-with-ember',
       day: 'Pre-Conf Activities',
@@ -584,7 +584,7 @@ export const SESSION = Object.freeze({
           <li>Routing</li>
           <li>Using these new features in your existing Ember app</li>
         </ul>
-        <p>The workshop will assume some previous experience with Ember.</p> <a class="button stroked" href="https://emberconf.com/register.html">Register to attend</a></div>
+        <p>The workshop will assume some previous experience with Ember.</p> <a class="button stroked" href="/register">Register to attend</a></div>
       `),
       anchor: 'modern-ember-with-octane',
       day: 'Pre-Conf Activities',
@@ -608,7 +608,7 @@ export const SESSION = Object.freeze({
           <li>Instruction on how to establish distinct competitive advantage</li>
           <li>And everything with an eye towards superior financial performance</li>
         </ul>
-        <p>Whether or not you have dedicated experience designers on your team, this workshop can help you navigate the field and make your own contribution.</p> <a class="button stroked" href="https://emberconf.com/register.html">Register to attend</a></div>
+        <p>Whether or not you have dedicated experience designers on your team, this workshop can help you navigate the field and make your own contribution.</p> <a class="button stroked" href="/register">Register to attend</a></div>
       `),
       anchor: 'usability-testing-for-developer-on-a-shoestring-budget',
       day: 'Pre-Conf Activities',
@@ -640,13 +640,13 @@ export const SESSION = Object.freeze({
           <li><strong>Will I be bored if I <em>do</em> already know TypeScript?</strong>
             <br> Not likely! We start with the basics, but include plenty of advanced material along the way—and you’ll also get to see how it integrates with Ember Octane.</li>
           <li><strong>I don’t even know what Octane is.</strong>
-            <br> Don’t worry: while this isn’t a full-blown introduction to Ember Octane, we will cover everything you need to know along the way. (This <em>will</em> make a perfect complement to the <em><a href="https://emberconf.com/speakers.html#ryan-tablada">Modern Ember with Octane</a></em> session, though!)</li>
+            <br> Don’t worry: while this isn’t a full-blown introduction to Ember Octane, we will cover everything you need to know along the way. (This <em>will</em> make a perfect complement to the <em><a href="/speakers?anc=#ryan-tablada">Modern Ember with Octane</a></em> session, though!)</li>
           <li><strong>It’s going to be a while before I can update to Octane.</strong>
             <br> That’s totally fine! The emphasis is on Octane, but you will see both pre-Octane and post-Octane versions of TypeScript-ed Ember, especially during the second half of the training.</li>
           <li><strong>I have never written any Ember at all.</strong>
             <br> We’d still love to have you! We won’t be covering Ember basics in this session—but if you have experience in other modern frameworks like React or Vue or Angular, you’ll keep up just fine!</li>
         </ul> 
-        <a class="button stroked" href="https://emberconf.com/register.html">Register to attend</a></div>
+        <a class="button stroked" href="/register">Register to attend</a></div>
       `),
       anchor: 'supercharging-ember-octane-with-typescript',
       day: 'Pre-Conf Activities',
@@ -663,7 +663,7 @@ export const SESSION = Object.freeze({
         <p>At the heart of open source are developers like you: people of all backgrounds, interests, and experience levels. In this 3-hour workshop, you'll learn how to contribute to Ember, meet the other developers who shape our favorite framework, and if you're up for the challenge, make a pull request!</p>
         <p>The workshop will begin with some formal instruction. Where do you start? What goes into a good PR? Who will help? What knowledge or skills do you need before you jump in? (Spoiler alert—not a whole lot! Learning new things is part of the fun.)</p>
         <p>The rest will be guided coding time. You'll have the opportunity to pair program or fly solo as you tackle an issue in Ember's learning resources or core code. Available issues will cover a wide range, appropriate for beginners and experts alike. A group of experienced contributors will be there to help debug, advise, and answer questions.</p>
-        <p>The workshop will include some formal instruction, guidance from a team of experienced contributors, and hands-on coding time. Attendees should bring a laptop, budget an hour of setup time in the week before the workshop, and watch for emailed instructions about setup.</p> <a class="button stroked" href="https://emberconf.com/register.html">Register to attend</a></div>
+        <p>The workshop will include some formal instruction, guidance from a team of experienced contributors, and hands-on coding time. Attendees should bring a laptop, budget an hour of setup time in the week before the workshop, and watch for emailed instructions about setup.</p> <a class="button stroked" href="/register">Register to attend</a></div>
       `),
       anchor: 'contributors-workshop',
       day: 'Pre-Conf Activities',
@@ -679,7 +679,7 @@ export const SESSION = Object.freeze({
       description: htmlSafe(`
         <p>Broccoli.js is the build system that powers Ember CLI. Come and learn how Broccoli.js works, how to use it standalone to build any javascript project, and how to utilize the Ember CLI hooks to add functionality to the Ember CLI build chain.</p>
         <p>The tutorial is a fun but deep dive into Broccoli.js by iterating on building a standalone build chain, from a simple single html file, all the way to a typescript, auto reloading, dev and prod versions, source maps, etc. Once the standalone build chain is complete, we 'll work on how Broccoli.js can be integrated into Ember.js via the addon system.</p>
-        <p>By the end of this talk, participants will be able to write their own broccoli plugins, and integrate those into Ember with Ember addons.</p> <a class="button stroked" href="https://emberconf.com/register.html">Register to attend</a></div>
+        <p>By the end of this talk, participants will be able to write their own broccoli plugins, and integrate those into Ember with Ember addons.</p> <a class="button stroked" href="/register">Register to attend</a></div>
       `),
       anchor: 'eat-your-greens-a-broccoli-js-tutorial',
       day: 'Pre-Conf Activities',
@@ -712,7 +712,7 @@ export const SESSION = Object.freeze({
           <li>How to fetch and persist graphs of data over the network</li>
         </ul>
         <p>This is a chance to not only improve your knowledge of Ember Data, but also the larger ideas behind declarative rendering and how they affect data fetching.</p>
-        <p>We can’t wait to share with you all the lessons we’ve learned over the past few years running EmberMap and helping various teams solve their data-loading problems!</p> <a class="button stroked" href="https://emberconf.com/register.html">Register to attend</a></div>
+        <p>We can’t wait to share with you all the lessons we’ve learned over the past few years running EmberMap and helping various teams solve their data-loading problems!</p> <a class="button stroked" href="/register">Register to attend</a></div>
       `),
       anchor: 'robust-data-fetching',
       day: 'Pre-Conf Activities',
@@ -737,7 +737,7 @@ export const SESSION = Object.freeze({
           <li>How to animate across route transitions</li>
           <li>How to test your custom animations</li>
         </ul>
-        <p>You will leave this session having coded several animations yourself, along with the knowledge needed to bring them back into the apps you work on every day.</p> <a class="button stroked" href="https://emberconf.com/register.html">Register to attend</a></div>
+        <p>You will leave this session having coded several animations yourself, along with the knowledge needed to bring them back into the apps you work on every day.</p> <a class="button stroked" href="/register">Register to attend</a></div>
       `),
       anchor: 'real-world-animations',
       day: 'Pre-Conf Activities',

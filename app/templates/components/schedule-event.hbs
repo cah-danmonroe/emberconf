@@ -10,14 +10,14 @@
         {{#each event.speakers as |speaker|}}
           <li class="speaker-photo">
             <div class="cropped-photo">
-              <a href="speakers.html#bear-douglas"><img alt="{{speaker.name}}" src="images/people/{{speaker.id}}.jpg"></a>
+              <a href="/speakers?anc=bear-douglas"><img alt="{{speaker.name}}" src="images/people/{{speaker.id}}.jpg"></a>
             </div>
           </li>
       {{/each}}
     </ul>
     <ul class="speaker-names">
       {{#each event.speakers as |speaker index|}}
-        <li><a href="speakers.html#erik-bryn">{{speaker.name}}</a></li>
+        <li><a href="/speakers?anc=erik-bryn">{{speaker.name}}</a></li>
       {{/each}}
     </ul>
   {{/if}}

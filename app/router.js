@@ -18,6 +18,7 @@ Router.map(function() {
   this.route('sponsors');
   this.route('register');
   this.route('code-of-conduct');
+  this.route('cfp-brainstorm');
 });
 
 export default Router;
