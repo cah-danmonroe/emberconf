@@ -1,7 +1,7 @@
 <div class="container">
   <ul class="the-speakers">
     {{#each speakers as |speaker|}}
-      <li>
+      <li data-anchor='{{speaker.id}}'>
         <div class="photo" id="{{speaker.id}}">
           <div class="cropped-photo"><img alt="{{speaker.name}}" src="./images/people/{{speaker.id}}.jpg"></div>
         </div>

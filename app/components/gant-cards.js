@@ -1,4 +1,5 @@
 import Component from '@ember/component'
+import { later } from '@ember/runloop';
 
 export default Component.extend({
 
@@ -9,7 +10,9 @@ export default Component.extend({
   didInsertElement() {
     this._super(...arguments);
 
-    this.set('isLoaded', true);
+    later(this, function() {
+      this.set('isLoaded', true);
+    }, 300);
   }
 
 })

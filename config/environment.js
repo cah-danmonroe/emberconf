@@ -25,8 +25,8 @@ module.exports = function(environment) {
 
     // Set or update content security policies
     contentSecurityPolicy: {
-      'font-src': "'self' fonts.gstatic.com",
-      'style-src': "'self' fonts.googleapis.com"
+      'font-src': "'self' fonts.gstatic.com www.w3.org",
+      'style-src': "'self' fonts.googleapis.com www.w3.org"
     },
 
     APP: {

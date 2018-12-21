@@ -1,59 +1,27 @@
-
+{{head-layout}}
 <div id="home">
-  <Navigation @showRegisterButton={{true}} />
+  <Navigation />
 
-  <header class="page-header">
-    <div class="canvas">
-      <canvas id="logo-grid" width="1576" height="1258"></canvas>
+  <Header @logoGridWidth=1576 @logoGridHeight=1258>
+    <div class="text">
+      <h1> A gathering of the <span>uniquely ambitious.</span> </h1>
+      <p>EmberConf is 3 days of activities, sessions, talks and trainings with the Ember Core Team and community members from around the world.</p>
+      <p>{{#link-to "schedule" class="button stroked"}}See the schedule{{/link-to}}</p>
     </div>
-    <div class="container">
-      <div class="text">
-        <h1> A gathering of the <span>uniquely ambitious.</span> </h1>
-        <p>EmberConf is 3 days of activities, sessions, talks and trainings with the Ember Core Team and community members from around the world.</p>
-        <p><a class="button stroked" href="https://emberconf.com/about.html">Learn about EmberConf</a></p>
-      </div>
-      <div class="badge"></div>
-    </div>
-  </header>
+    <div class="badge"></div>
+  </Header>
+
   <section class="body">
-    <div class="introduction">
-      <div class="container">
-        <div class="remind-me">
-          <h2>Registration opens December 17.</h2>
-          <p>Buy your tickets early before 2018 budgets are gone!</p>
-          <div id="mc_embed_signup">
-            <form action="https://tilde.us5.list-manage.com/subscribe/post?u=38b10ba9a19dbc7dcef880a53&amp;id=3ef3635767&amp;SOURCE=Ticket-Reminder" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
-              <div id="mc_embed_signup_scroll">
-                <div class="mc-field-group">
-                  <div class="input-wrapper">
-                    <div class="text-input">
-                      <input type="email" value="" name="EMAIL" placeholder="Enter your email" class="required email" id="mce-EMAIL"> </div>
-                    <div class="submit-button">
-                      <input type="submit" value="Get a reminder" name="subscribe" id="mc-embedded-subscribe"> </div>
-                  </div>
-                </div>
-                <div id="mce-responses" class="clear">
-                  <div class="response" id="mce-error-response" style="display:none"></div>
-                  <div class="response" id="mce-success-response" style="display:none"></div>
-                </div>
-                <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                  <input name="b_38b10ba9a19dbc7dcef880a53_433ae4a18f" tabindex="-1" value="">
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="featured-speakers registration-closed">
+
+    <div class="featured-speakers registration-open">
       <div class="container"><img alt="The EmberConf Emcees" class="emcees" src="./images/mcs.png">
         <h3>Hosted by <a href="https://emberconf.com/speakers.html#danielle-adams">Danielle Adams</a> &amp; <a href="https://emberconf.com/speakers.html#vaidehi-joshi">Vaidehi Joshi</a></h3>
         <h2>Featuring talks by...</h2>
         <ul>
           {{#each model.speakers as |speaker|}}
             <li>
-              {{#link-to "speakers"}}
-                <div class="image cropped-photo"><img alt="{{speaker.name}}" src="./images/{{speaker.id}}.jpg"></div>
+              {{#link-to "speakers" (query-params anc=speaker.id)}}
+                <div class="image cropped-photo"><img alt="{{speaker.name}}" src="./images/people/{{speaker.id}}.jpg"></div>
                 <p>{{speaker.name}}</p>
               {{/link-to}}
             </li>
